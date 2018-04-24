@@ -344,10 +344,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     textclassifier.smartselection.bundle1
 
-# VNDK
-PRODUCT_PACKAGES += \
-    vndk-sp
-
 # Vibrator
 PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
