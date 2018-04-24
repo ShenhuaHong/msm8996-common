@@ -183,13 +183,13 @@ service charger /sbin/chargeonlymode
     group system graphics
     seclabel u:r:charger:s0
 
-service energy-awareness /vendor/bin/energy-awareness
+service energy-awareness /system/vendor/bin/energy-awareness
     class main
     user root
     group system
     oneshot
 
-service hvdcp_opti /vendor/bin/hvdcp_opti
+service hvdcp_opti /system/vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
