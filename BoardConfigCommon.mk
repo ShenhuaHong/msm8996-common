@@ -195,7 +195,9 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(VENDOR_PATH)
 
 # RIL
 PROTOBUF_SUPPORTED := true
-TARGET_RIL_VARIANT := caf
+PRODUCT_BOOT_JARS += telephony-ext
+SKIP_BOOT_JARS_CHECK := true
+RIL_PATH := /hardware/ril/
 
 # SELinux
 include device/qcom/sepolicy/sepolicy.mk
